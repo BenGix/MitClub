@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>باشگاه مشتریان
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Demo styles -->
+
+</head>
+
+<body>
+    <div class="height-manager ">
+        <div id="overlay">
+            <img id="fullscreenImage" style="">
+            <button id="close-img">
+                <span class="icon-cross"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" height="2rem" viewBox="0 0 384 512">
+                    <path
+                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                </svg>
+            </button>
+        </div>
+        <button id="customNextButton">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                <path
+                    d="M0.46967 0.96967C0.735936 0.703403 1.1526 0.679197 1.44621 0.897052L1.53033 0.96967L8 7.439L14.4697 0.96967C14.7359 0.703403 15.1526 0.679197 15.4462 0.897052L15.5303 0.96967C15.7966 1.23594 15.8208 1.6526 15.6029 1.94621L15.5303 2.03033L8.53033 9.03033C8.26406 9.2966 7.8474 9.3208 7.55379 9.10295L7.46967 9.03033L0.46967 2.03033C0.176777 1.73744 0.176777 1.26256 0.46967 0.96967Z" />
+            </svg>
+        </button>
+        <button id="customPrevButton" class="disabled">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+                <path
+                    d="M15.5303 9.03033C15.2641 9.2966 14.8474 9.3208 14.5538 9.10295L14.4697 9.03033L8 2.561L1.53033 9.03033C1.26406 9.2966 0.8474 9.3208 0.553788 9.10295L0.46967 9.03033C0.203403 8.76406 0.179197 8.3474 0.397052 8.05379L0.46967 7.96967L7.46967 0.96967C7.73594 0.703403 8.1526 0.679197 8.44621 0.897052L8.53033 0.96967L15.5303 7.96967C15.8232 8.26256 15.8232 8.73744 15.5303 9.03033Z" />
+            </svg>
+        </button>
+        <div class="cloud-top" title="برگشت به صفحه اصلی">
+            <a href="https://shopmit.net/" type="button" id="btn-close">
+                <span class="icon-cross"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" height="2rem" viewBox="0 0 384 512">
+                    <path
+                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                </svg>
+            </a>
+        </div>
+        <div class="cloud-bottom">
+        </div>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper mySwiper swiper-h">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <section id="slide-1">
+                    <div class="title">
+                        <h1 class="cream">ثبت نظر کن, امتیاز بگیر</h1>
+                    </div>
+                    <div class="card firstCard">
+                        <div class="image-container">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path d="M9.1972 11.7H14.1972" stroke="black" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M11.6972 14.2V9.19995" stroke="black" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M11.4972 2C16.7472 2 20.9972 6.25 20.9972 11.5C20.9972 16.75 16.7472 21 11.4972 21C6.24719 21 1.99719 16.75 1.99719 11.5C1.99719 7.8 4.10719 4.6 7.19719 3.03"
+                                        stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M21.9972 22L19.9972 20" stroke="black" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <img src="./img/comments.png">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="swiper-slide">
+                <section id="slide-2">
+                    <div class="title-mobile">
+                        <h1 class="gray">
+                            امتیازگیری با ثبت نظر
+                        </h1>
+                    </div>
+                    <div class="cards">
+                        <div class="cards-1">
+                            <p> بدون خرید محصول از ام آی تی</p>
+                            <div class="card secondCard">
+                                <img src="./img/commenting.svg">
+                            </div>
+                            <p class="replaceDigits">2 امتیاز</p>
+                            <p class="replaceDigits">هر امتیاز : 1000 تومان</p>
+                        </div>
+                        <div class="title-pc">
+                            <h1 class="gray">
+                                امتیازگیری با ثبت نظر
+                            </h1>
+                        </div>
+                        <div class="cards-1">
+                            <p>خرید محصول از ام آی تی</p>
+                            <div class="card secondCard">
+                                <img src="./img/shopping.svg">
+                            </div>
+                            <p class="replaceDigits">3 امتیاز</p>
+                            <p class="replaceDigits">هر امتیاز : 1000 تومان</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper mySwiper2 swiper-v">
+                    <div id="slide-3" class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="circle-base circle-1">
+                                <div class="coin  firstcoin-1">
+                                    <p class="replaceDigits">50</p>
+                                    <div>
+                                        <div class="trinagle">
+                                        </div>
+                                        <div class="card thirdCard ">
+                                            <div class="coin">
+                                                <div class="coin-ico">
+                                                    <p class="replaceDigits">
+                                                        50
+                                                    </p>
+                                                </div>
+                                                <div class="coin-shadow">
+                                                </div>
+                                            </div>
+                                            <p class="replaceDigits">
+                                                برای خرید تا 1میلیون تومان
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" circle-base circle-2">
+                                <div class="coin firstcoin-2">
+                                    <p class="replaceDigits">
+                                        100
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="circle-base circle-3">
+                                <div class="coin firstcoin-3">
+                                    <p class="replaceDigits">
+                                        150
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide" id="slide-coin-2">
+                                <div class="circle-base circle-1">
+                                    <div class="coin secondcoin-1">
+                                        <p class="replaceDigits">
+                                            50
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class=" circle-base circle-2">
+                                    <div class="coin secondcoin-2">
+                                        <p class="replaceDigits">
+                                            100
+                                        </p>
+                                        <div>
+                                            <div class="trinagle">
+                                            </div>
+                                            <div class="card thirdCard ">
+                                                <div class="coin">
+                                                    <div class="coin-ico">
+                                                        <p class="replaceDigits">
+                                                            100
+                                                        </p>
+                                                    </div>
+                                                    <div class="coin-shadow">
+                                                    </div>
+                                                </div>
+                                                <p class="replaceDigits">
+                                                    برای خرید 1 تا 5 میلیون
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="circle-base circle-3">
+                                    <div class="coin secondcoin-3">
+                                        <p class="replaceDigits">150</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide" id="slide-coin-3">
+                                <div class="circle-base circle-1">
+                                    <div class="coin thirdcoin-1">
+                                        <p class="replaceDigits">50</p>
+                                    </div>
+                                </div>
+                                <div class=" circle-base circle-2">
+                                    <div class="coin thirdcoin-2">
+                                        <p class="replaceDigits">100</p>
+                                    </div>
+                                </div>
+                                <div class="circle-base circle-3">
+                                    <div class="coin thirdcoin-3">
+                                        <p class="replaceDigits">150</p>
+                                        <div>
+                                            <div class="trinagle">
+
+                                            </div>
+                                            <div class="card thirdCard ">
+                                                <div class="coin">
+                                                    <div class="coin-ico">
+                                                        <p class="replaceDigits">
+                                                            150
+                                                        </p>
+                                                    </div>
+                                                    <div class="coin-shadow">
+                                                    </div>
+                                                </div>
+                                                <p class="replaceDigits">
+                                                    برای خرید بالا تر از 5 میلیون
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <section id="slide-4">
+                    <div class="image-container">
+                        <div class="zoom-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M9.1972 11.7H14.1972" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M11.6972 14.2V9.19995" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M11.4972 2C16.7472 2 20.9972 6.25 20.9972 11.5C20.9972 16.75 16.7472 21 11.4972 21C6.24719 21 1.99719 16.75 1.99719 11.5C1.99719 7.8 4.10719 4.6 7.19719 3.03"
+                                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M21.9972 22L19.9972 20" stroke="black" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img class="image-pc" src="./img/slide4-screenshot.png">
+                    </div>
+                    <div class="image-container image-mobile">
+                        <div class="zoom-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M9.1972 11.7H14.1972" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M11.6972 14.2V9.19995" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M11.4972 2C16.7472 2 20.9972 6.25 20.9972 11.5C20.9972 16.75 16.7472 21 11.4972 21C6.24719 21 1.99719 16.75 1.99719 11.5C1.99719 7.8 4.10719 4.6 7.19719 3.03"
+                                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M21.9972 22L19.9972 20" stroke="black" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="./img/slide-4-mobile.png">
+                    </div>
+                    <div class="info cream">
+                        <h1>
+                            تاریخچه امتیازات
+                        </h1>
+                        <p>
+                            در صفحه “ام آی تی کلاب” به قسمت “تاریخچه امتیازات” مراجعه کن و امتیازات خودتو ببین
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <div class="swiper-slide">
+                <section id="slide-5">
+                    <div class="title">
+                        <h1 class="gray">
+                            طریقه استفاده از امتیازات
+                        </h1>
+                    </div>
+                    <div class="card">
+                        <div class="image-container">
+                            <div class="zoom-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path d="M9.1972 11.7H14.1972" stroke="black" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M11.6972 14.2V9.19995" stroke="black" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M11.4972 2C16.7472 2 20.9972 6.25 20.9972 11.5C20.9972 16.75 16.7472 21 11.4972 21C6.24719 21 1.99719 16.75 1.99719 11.5C1.99719 7.8 4.10719 4.6 7.19719 3.03"
+                                        stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M21.9972 22L19.9972 20" stroke="black" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <img class="image-pc" src="./img/slide-5.jpg">
+                        </div>
+                        <div class="image-container">
+                            <img class="image-mobile" src="./img/slide-5-mobile.png">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div id="slide-6" class="swiper-slide">
+                <div class="swiper mySwiperCard1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide card">
+                            <div>
+                                <div class="coin">
+                                    <div class="coin-ico">
+                                        <img src="./img/hammer-icon.png">
+                                    </div>
+                                    <div class="coin-shadow">
+                                    </div>
+                                </div>
+                            </div>
+                            <p>سعی کن نظری که می‌نویسی مرتبط با محصول باشه و به بقیه کاربرها هم کمک کنه</p>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div>
+                                <div class="coin">
+                                    <div class="coin-ico">
+                                        <img src="./img/hammer-icon.png">
+                                    </div>
+                                    <div class="coin-shadow">
+                                    </div>
+                                </div>
+                            </div>
+                            <p> اگر خریدار محصول هستی و میخواهی امتیاز بگیری؛ باید برای همون محصول خریداری شده کامنت
+                                بذاری تا بتونی امتیاز کامل رو کسب کنی.
+                            </p>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div>
+                                <div class="coin">
+                                    <div class="coin-ico">
+                                        <img src="./img/hammer-icon.png">
+                                    </div>
+                                    <div class="coin-shadow">
+                                    </div>
+                                </div>
+                            </div>
+                            <p> سایت دارای سیستم تشخیص SPAM هست که در صورت مشاهده حساب شما غیرفعال میشه.
+                            </p>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div>
+                                <div class="coin">
+                                    <div class="coin-ico">
+                                        <img src="./img/hammer-icon.png">
+                                    </div>
+                                    <div class="coin-shadow">
+                                    </div>
+                                </div>
+                            </div>
+                            <p> هر کاربر برای هر محصول فقط می‌تونه یک نظر در مورد محصول بزاره؛ پس سعی کنید تمام جوانب
+                                محصول رو توی متن نظرتون بیارید تا علاوه بر امتیاز لایک هم بگیری
+                            </p>
+                        </div>
+                    </div>
+                    <!-- <div id="card-nav">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div> -->
+                </div>
+                <div class="title">
+                    <h1 class="white">
+                        : قوانین دریافت امتیاز
+                    </h1>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <section id="slide-7">
+                    <div class="QA">
+                        <h1 class="white">
+                            سوالات متداول
+                        </h1>
+                        <p class="quistion">
+                            آیا محدودیت زمانی در استفاده از امتیازات وجود دارد؟
+                        </p>
+                        <p class="answer">
+                            خیر امتیازاتی که از طریق ثبت نظر جمع میکنی هیچ محدودیت زمانی نداره و سوخت نمیشه
+                        </p>
+                        <p class="quistion">
+                            آیا این امتیازات را می توان برای خرید همه دسته بندی های محصول استفاده کرد؟
+                        </p>
+                        <p class="answer">
+                            بله، میشه برای تمامی دسته بندی ها استفاده کرد
+                        </p>
+                        <p class="quistion">
+                            آیا می توان معدل ریالی امتیازات را دریافت نمود؟
+                        </p>
+                        <p class="answer">
+                            خیر، امتیازات کسب شده فقط برای خرید محصول قابل استفاده می باشد.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="./img/qa.png">
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="script.js"></script>
+
+
+</html>
